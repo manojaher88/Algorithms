@@ -19,12 +19,34 @@ import Foundation
 /**
  Reverse an array
  */
-reverseFunction()
+// reverseFunction()
 
 /**
  Balance the parentheses
  */
-print(balanceTheParentheses(string: "((1 + 2) * 3)"))
-print(balanceTheParentheses(string: "((1 + 2) * 3)("))
-print(balanceTheParentheses(string: "((1 + 2) * 3)))"))
+// print(balanceTheParentheses(string: "((1 + 2) * 3)"))
+// print(balanceTheParentheses(string: "((1 + 2) * 3)("))
+// print(balanceTheParentheses(string: "((1 + 2) * 3)))"))
+
+
+// QUEUE
+let node3 = Node(value: 3, nextNode: nil)
+let node2 = Node(value: 2, nextNode: node3)
+let node1 = Node(value: 1, nextNode: node2)
+
+//print(node1.description)
+
+
+var list = LinkedList<Int>()
+list.push(value: 1)
+list.push(value: 2)
+list.push(value: 3)
+list.push(value: 4)
+
+list.append(value: 5)
+list.append(value: 6)
+list.append(value: 7)
+list.append(value: 8)
+
+print(list.description)
 
